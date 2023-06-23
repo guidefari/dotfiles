@@ -1,5 +1,5 @@
 # Stow
-- This repo is managed mostly with the help of GNU Stow. I keep all my dotfiles in one directory
+- This repo is managed mostly with the help of [GNU Stow](https://www.gnu.org/software/stow/). I keep all my dotfiles in one directory
 
 A few places you can learn about stow:
 1. [Developer Productivity by ThePrimeagen](https://frontendmasters.com/courses/developer-productivity/) - He's the one who introduced me to stow, there's 2 videos on the topic in this course
@@ -8,7 +8,10 @@ A few places you can learn about stow:
 # Tmux
 - `brew install tmux`
 - [Base Config](https://github.com/dreamsofcode-io/tmux) from [Elliott Minns](https://www.elliottminns.com/)
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+- [Video](https://www.youtube.com/watch?v=DzNmUNvnB04) from Elliott to follow along
+### [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
+- `prefix` + `I` to install plugins & refresh tmux env
+
 
 # Nvim
 - Base config from [NvChad](https://nvchad.com/docs/quickstart/install)
