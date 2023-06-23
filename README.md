@@ -16,3 +16,5 @@ A few places you can learn about stow:
 # Nvim
 - Base config from [NvChad](https://nvchad.com/docs/quickstart/install)
 - if you're on mac and installed `nvim` via brew, make sure it's the version required by NvChad. I lost a few hours to this, had `0.5.x` installed instead of the minimun required `0.9.0`. Amazing how I managed to eff up the first pre-requisite😂
+
+# [Lazygit](https://github.com/jesseduffield/lazygit#homebrew)
