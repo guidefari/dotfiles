@@ -7,13 +7,11 @@ session_root "~/source/here_hugo/"
 if initialize_session "here_hugo"; then
 
   # Create a new window inline within session layout definition.
-  new_window "here_hugo"
-  split_v 20
+  new_window "server"
   run_cmd "yarn dev"
   split_h 50
-  select_pane 0
+  new_window "nvim"
   run_cmd "nvim ."
-
 fi
 
 # Finalize session creation and switch/attach to it.
