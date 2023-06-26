@@ -1,5 +1,17 @@
 local options = {
-  ensure_installed = { "lua-language-server" }, -- not an option from mason.nvim
+  ensure_installed = {
+    -- lua stuff
+    "lua-language-server",
+    "stylua",
+    -- "prettier-eslint", - this doesn't appear to be working. follow up
+
+    -- web dev stuff
+    "css-lsp",
+    "html-lsp",
+    "typescript-language-server",
+    "svelte-language-server",
+    "prettier",
+  },
 
   PATH = "prepend",
 
