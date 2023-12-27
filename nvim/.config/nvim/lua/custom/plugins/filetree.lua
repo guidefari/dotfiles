@@ -16,8 +16,9 @@ return {
           visible = true,
           hide_dotfiles = false,
           hide_gitignored = false
-        }
-      }
+        },
+      },
+      neo_tree_show_line = false,
     }
   end,
 }

@@ -25,6 +25,9 @@ are first encountering a few different constructs in your nvim config.
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- vim config for scroll screen when 5 lines from the bottom
+vim.opt.scrolloff = 9
+
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -141,19 +144,19 @@ require('lazy').setup({
     end,
   },
 
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = false,
-        theme = 'onedark',
-        component_separators = '|',
-        section_separators = '',
-      },
-    },
-  },
+  -- {
+  --   -- Set lualine as statusline
+  --   'nvim-lualine/lualine.nvim',
+  --   -- See `:help lualine.txt`
+  --   opts = {
+  --     options = {
+  --       icons_enabled = false,
+  --       theme = 'onedark',
+  --       component_separators = '|',
+  --       section_separators = '',
+  --     },
+  --   },
+  -- },
 
   {
     -- Add indentation guides even on blank lines
@@ -404,6 +407,7 @@ local on_attach = function(_, bufnr)
   end
 
   nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
+  nmap('<leader>e', ':Neotree toggle<CR>', '[E]xplorer')
   nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
   -- vim.api.nvim_set_keymap('n', '',, { noremap = true, silent = true })
   nmap('<leader>w', ':w<CR>' )
